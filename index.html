@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <img class="bg-image" src="assets/images/bg-image.png" alt="game-map">
+    <div class="gamer-icon-area">
+        <img class="gamer-icon" src="assets/images/girl-icon.png" alt="gamer-icon" id="gamer-icon">
+    </div>
+
+    <div class="bottom">
+        <div class="slider">
+            <button class="slider-prev"></button>
+            <div class="slider-content">
+            <div class="slider-line">
+                <div class="slide friend"></div>
+                <div class="slide friend"></div>
+                <div class="slide friend"></div>
+                <div class="slide friend"></div>
+                <div class="slide friend"></div>
+                <div class="slide friend"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            </div>
+            <button class="slider-next"></button>
+        </div>
+
+        <div class="bottom-buttons">
+        <button class="chat">
+            <img src="assets/images/chat.png" alt="chat">
+        </button>
+        <button class="to-univer" onclick="nextPoint()">В универ</button>
+        <button class="mail">
+            <img src="assets/images/mail.png" alt="mail">
+        </button>
+        <button class="rating" onclick="openRatingPopup(event)">
+            <img src="assets/images/rating.png" alt="rating">
+        </button>
+        </div>
+    </div>
+</div>
+
+<div class="rating-popup" id="popup">
+    <div class="rating-popup-content">
+    <div class="rating-popup-title">Рейтинг игроков</div>
+    <div class="rating-popup-close" id="popup-close">
+        <img src="assets/images/close.png" alt="close-cross">
+    </div>
+    <div class="rating-popup-table">
+        <div class="rating-popup-table-header">
+            <div class="rating-popup-table-header-number">Место</div>
+            <div class="rating-popup-table-header-name">Имя Фамилия</div>
+            <div class="rating-popup-table-header-points">Опыт</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="scripts/data.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
