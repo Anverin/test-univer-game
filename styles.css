@@ -127,6 +127,7 @@ button {
     align-items: center;
     /*display: flex;*/
     display: none;
+    overflow: hidden;
 }
 
 .rating-popup-content {
